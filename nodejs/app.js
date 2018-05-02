@@ -21,7 +21,7 @@ var rl = readline.createInterface({
 });
 myPort.on('open', onOpen);
 myPort.on('data', onrecieveData);
-myPort.on('error', showError)
+myPort.on('error', showError);
 rl.on('line', sendData);
 
 function onOpen()
