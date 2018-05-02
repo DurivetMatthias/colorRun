@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 var serialport = require('serialport');
 var readline = require('readline');
 
-var portname = process.argv[2];
+var portname = "COM5";
 
 var myPort = new serialport(portname, {
     baudRate: 9600
