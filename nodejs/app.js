@@ -6,6 +6,44 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var serialport = require('serialport');
+var readline = require('readline');
+
+var portname = process.argv[2];
+
+var myPort = new serialport(portname, {
+    baudRate: 9600
+});
+
+var rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+myPort.on('open', onOpen);
+myPort.on('data', onrecieveData);
+myPort.on('error', showError)
+rl.on('line', sendData);
+
+function onOpen()
+{
+    console.log("open connection");
+}
+
+function onrecieveData(data)
+{
+    console.log("Received data: " + data);
+}
+
+function sendData(data)
+{
+    console.log("sending to serial: " + data);
+    myPort.write(data + "\n");
+}
+
+function showError(error)
+{
+    console.log('Serial port error: ' + error);
+}
 
 var app = express();
 
