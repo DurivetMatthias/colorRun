@@ -1,3 +1,19 @@
+const socket = io();
+let order;
+
+function init()
+{
+    function changeOrder(data)
+    {
+        order = data;
+    }
+
+    socket.on("order",function(msg){
+        console.log(msg);
+    })
+
+}
+
 let background;
 let player;
 let ground;
@@ -290,3 +306,5 @@ function destroyAll() {
 function winGame(){
 
 }
+
+document.addEventListener("DOMContentLoaded", init);
