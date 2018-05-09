@@ -26,7 +26,7 @@ function onOpen()
 
 function onrecieveData(data)
 {
-    console.log(data.toString());
+    //console.log(data.toString());
     socket.emit("order",data.toString());
 }
 

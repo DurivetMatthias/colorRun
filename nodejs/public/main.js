@@ -1,18 +1,7 @@
 const socket = io();
 let order;
 
-function init()
-{
-    function changeOrder(data)
-    {
-        order = data;
-    }
 
-    socket.on("order",function(msg){
-        console.log(msg);
-    })
-
-}
 
 let background;
 let player;
@@ -79,14 +68,6 @@ function preload ()
     this.load.image('green', 'assets/green.jpg');
     this.load.image('blue', 'assets/blue.jpg');
 
-    /*this.load.image('gameOver', 'assets/game_over.png');
-    this.load.image('bar', 'assets/warmth_bar.jpg');
-    this.load.image('bar_back', 'assets/black.jpg');
-    this.load.image('waterProjectile', 'assets/waterProjectile.png');
-    this.load.image('fork', 'assets/Fork.png');
-    this.load.image('spoon', 'assets/Spoon.png');
-    this.load.image('knife', 'assets/Knife.png');*/
-
     this.load.spritesheet('RTN', 'assets/redToNeutral.png', { frameWidth: 64, frameHeight: 64 });
     this.load.spritesheet('GTN', 'assets/greenToNeutral.png', { frameWidth: 64, frameHeight: 64 });
     this.load.spritesheet('BTN', 'assets/blueToNeutral.png', { frameWidth: 64, frameHeight: 64 });
@@ -95,16 +76,6 @@ function preload ()
     this.load.spritesheet('NTG', 'assets/neutralToGreen.png', { frameWidth: 64, frameHeight: 64 });
     this.load.spritesheet('NTB', 'assets/neutralToBlue.png', { frameWidth: 64, frameHeight: 64 });
 
-    /*this.load.spritesheet('LFHappy', 'assets/LFlameboiHappy.png', { frameWidth: 96, frameHeight: 115 });
-    this.load.spritesheet('LFNeutral', 'assets/LFlameboiNeutral.png', { frameWidth: 96, frameHeight: 115 });
-    this.load.spritesheet('LFSad', 'assets/LFlameboiSad.png', { frameWidth: 96, frameHeight: 115 });
-
-    this.load.spritesheet('RFHappy', 'assets/RFlameboiHappy.png', { frameWidth: 102, frameHeight: 115 });
-    this.load.spritesheet('RFNeutral', 'assets/RFlameboiNeutral.png', { frameWidth: 102, frameHeight: 115 });
-    this.load.spritesheet('RFSad', 'assets/RFlameboiSad.png', { frameWidth: 96, frameHeight: 115 });
-
-    this.load.spritesheet('waterDrop', 'assets/WaterboiEnemy.png', { frameWidth: 50, frameHeight: 50 });
-    this.load.spritesheet('loss', 'assets/Loss.png', { frameWidth: 115, frameHeight: 114 });*/
 }
 
 function create ()
@@ -201,6 +172,7 @@ function create ()
 
 function update ()
 {
+    //console.log(order);
     if(!player.touchingGround){
         player.setGravityY(gravity);
     }
@@ -215,34 +187,46 @@ function update ()
         player.x = maxPlayerPosition;
     }
 
-    if (cursors.up.isDown && player.touchingGround){
+    switch(order){
+        case "J":
+            jumpUp();
+            break;
+        case "P":
+            pauseGame();
+            break;
+        case "R":
+            turnRed();
+            break;
+        case "B":
+            turnBlue();
+            break;
+        case "G":
+            turnGreen();
+            break;
+
+    }
+
+    order = "";
+    player.touchingGround = false;
+}
+
+function jumpUp()
+{
+    if (player.touchingGround){
         player.setVelocityY(-jump);
     }
+}
 
-    if(pauzeKey.isDown){
-        if(Date.now()-lastPauzeTime>300){ // DEBOUNCING
-            lastPauzeTime = Date.now();
-            let tempY = player.body.velocity.y;
-            player.setVelocityY(previousYSpeed);
-            previousYSpeed = tempY;
-            player.body.allowGravity = !player.body.allowGravity;
-            pauzed = !pauzed;
-        }
+function pauseGame()
+{
+    if(Date.now()-lastPauzeTime>300){ // DEBOUNCING
+        lastPauzeTime = Date.now();
+        let tempY = player.body.velocity.y;
+        player.setVelocityY(previousYSpeed);
+        previousYSpeed = tempY;
+        player.body.allowGravity = !player.body.allowGravity;
+        pauzed = !pauzed;
     }
-
-    if(redKey.isDown){
-        turnRed();
-    }
-
-    if(greenKey.isDown){
-        turnGreen();
-    }
-
-    if(blueKey.isDown){
-        turnBlue();
-    }
-
-    player.touchingGround = false;
 }
 
 function paneContact(player, pane) {
@@ -294,6 +278,15 @@ function turnBlue(){
     },300);
 }
 
+function turnYellow()
+{
+    turnNeutral();
+    setTimeout(function(){
+        player.anims.play("neutralToYellow");
+        player.color = "yellow";
+    },300);
+}
+
 function kill(object) {
     object.disableBody(true,true);
     object = null;
@@ -304,6 +297,19 @@ function destroyAll() {
 }
 
 function winGame(){
+
+}
+
+
+
+function init()
+{
+
+
+    socket.on("order",function(msg){
+        console.log(msg);
+        order = msg;
+    })
 
 }
 
