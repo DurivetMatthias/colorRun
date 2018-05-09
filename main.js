@@ -14,26 +14,23 @@ let greenKey;
 let blueKey;
 let yellowKey;
 let lastPauzeTime = Date.now();
-let overlapCounter = 0;
 
 const width = 1600;
 const height = 700;
-const maxPlayerSpeed = 300;
-const playerSpeedIncrement = 150;
 const maxPlayerPosition = width/3;
 const bounce = 0.1;
 const gravity = 1000;
 const theoreticalFramesPerSecond = 60;
 const groundY = height*7/10;
-const jump = 1000;
-const widthMultiplier = 5;
-const gameSpeed = 5; //pixels per frame
+const jump = 900;
+const widthMultiplier = 50;
+const gameSpeed = 500; //pixels per frame
 const colorArray = ['red','green','blue','yellow'];
 const colliders = {red: null,green: null,blue: null,yellow: null};
 
 const config = {
     type: Phaser.AUTO,
-    width: width*widthMultiplier,
+    width: width,
     height: height,
     physics: {
         default: 'arcade',
@@ -119,21 +116,27 @@ function create ()
         repeat: false
     });
 
-    for(let i = 0; i<50; i++){
+    for(let i = 0; i<20*widthMultiplier; i++){
         let x = Math.floor(Math.random() * width*widthMultiplier)+ width;
-        let y = Math.floor(Math.random() * groundY/2)+ groundY/2;
-        let paneWidth = Math.floor(Math.random() * width/16) + width/16;
-        let paneHeight = Math.floor(Math.random() * height/16)+ height/16;
+        let y = Math.floor(Math.random() * height/2)+ height/2 - height/50;
+        /*let paneWidth = Math.floor(Math.random() * width/50) + width/50;
+        let paneHeight = Math.floor(Math.random() * height/50)+ height/50;*/
+        let paneWidth = 80;
+        let paneHeight = 20;
         let colorIndex = Math.floor(Math.random() * 4);
         let color = colorArray[colorIndex];
 
         let pane = outerThis.physics.add.sprite(x,y, color).setOrigin(0,0).setGravityY(-gravity);
         pane.setDisplaySize(paneWidth,paneHeight);
+        pane.setImmovable();
         pane.width = paneWidth;
         pane.height = paneHeight;
-        pane.body.immovable = true;
+        //pane.body.immovable = true;
         pane.color = color;
         //pane.setBlendMode(Phaser.BlendModes.DIFFERENCE);
+        pane.setVelocityX(-gameSpeed);
+        pane.setMass(3);
+        pane.setMaxVelocity(gameSpeed, 1000);
         panes[color].push(pane);
     }
 
@@ -141,12 +144,14 @@ function create ()
     player.setBounce(bounce);
     player.isDead = false;
     player.body.setGravityY(gravity);
-    player.body.maxVelocity = {x: maxPlayerSpeed, y:1000};
     player.height = 100;
     player.width = 100;
     player.setDisplaySize(100,100);
     player.color = "red";
-    player.overlap = false;
+    player.setAccelerationX(gameSpeed/2);
+    player.setVelocityX(gameSpeed);
+    player.setMaxVelocity(gameSpeed,1000);
+    player.setMass(2);
 
     ground = this.physics.add.sprite(0, height*9/10, 'ground').setOrigin(0,0).setGravityY(-gravity);
     ground.width = width*widthMultiplier;
@@ -170,12 +175,6 @@ function create ()
     colliders.blue.active = false;
     colliders.yellow.active = false;
 
-    this.physics.add.overlap(player, panes.red, setCustomCollision, null, this);
-    this.physics.add.overlap(player, panes.green, setCustomCollision, null, this);
-    this.physics.add.overlap(player, panes.blue, setCustomCollision, null, this);
-    this.physics.add.overlap(player, panes.yellow, setCustomCollision, null, this);
-
-
     turnRed();
 
     //CAMERA STUFF
@@ -186,15 +185,8 @@ function create ()
 
 function update ()
 {
-    if(!pauzed&&!player.overlap){
+    if(!pauzed){
         moveBackground();
-        moveObjects();
-        player.x += 1;
-    }
-
-    if(!pauzed&&player.overlap){
-        player.x -= gameSpeed;
-        player.overlap = false;
     }
 
     if(player.x > maxPlayerPosition){
@@ -212,6 +204,8 @@ function update ()
             player.setVelocityY(previousYSpeed);
             previousYSpeed = tempY;
             player.body.allowGravity = !player.body.allowGravity;
+            if(!pauzed)setPaneVelocity(0);
+            else setPaneVelocity(gameSpeed);
             pauzed = !pauzed;
         }
     }
@@ -233,27 +227,23 @@ function update ()
     }
 }
 
-function moveBackground() {
-    background.x -= gameSpeed;
-}
-
-function setCustomCollision(player, pane){
-    if(player.color === pane.color) player.overlap = true;
-}
-
-function moveObjects() {
+function setPaneVelocity(amount) {
     panes.red.forEach(function (pane) {
-        pane.x -= gameSpeed;
+        pane.setVelocityX(-amount);
     });
     panes.green.forEach(function (pane) {
-        pane.x -= gameSpeed;
+        pane.setVelocityX(-amount);
     });
     panes.blue.forEach(function (pane) {
-        pane.x -= gameSpeed;
+        pane.setVelocityX(-amount);
     });
     panes.yellow.forEach(function (pane) {
-        pane.x -= gameSpeed;
+        pane.setVelocityX(-amount);
     });
+}
+
+function moveBackground() {
+    background.x -= gameSpeed/theoreticalFramesPerSecond;
 }
 
 function turnNeutral(){
