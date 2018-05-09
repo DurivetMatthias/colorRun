@@ -17,7 +17,7 @@ let lastPauzeTime = Date.now();
 
 const width = 1600;
 const height = 700;
-const maxPlayerPosition = width/3;
+const maxPlayerPosition = width/2;
 const bounce = 0.1;
 const gravity = 1000;
 const theoreticalFramesPerSecond = 60;
@@ -52,19 +52,30 @@ function preload ()
 {
     this.load.image('ground', 'assets/platform.png');
     this.load.image('background', 'assets/bg.png');
-    this.load.image('player', 'assets/black.jpg');
-    this.load.image('red', 'assets/red.jpg');
-    this.load.image('green', 'assets/green.jpg');
-    this.load.image('blue', 'assets/blue.jpg');
+    this.load.image('red', 'assets/red.png');
+    this.load.image('green', 'assets/green.png');
+    this.load.image('blue', 'assets/blue.png');
     this.load.image('yellow', 'assets/yellow.png');
 
-    this.load.spritesheet('RTN', 'assets/redToNeutral.png', { frameWidth: 64, frameHeight: 64 });
-    this.load.spritesheet('GTN', 'assets/greenToNeutral.png', { frameWidth: 64, frameHeight: 64 });
-    this.load.spritesheet('BTN', 'assets/blueToNeutral.png', { frameWidth: 64, frameHeight: 64 });
+    this.load.spritesheet('RTN', 'assets/red/Caelenberghe_Transform.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('GTN', 'assets/green/Standaert_Transform.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('BTN', 'assets/blue/Durivet_Transform.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('YTN', 'assets/yellow/Bruynooghe_Transform.png', { frameWidth: 100, frameHeight: 100 });
 
-    this.load.spritesheet('NTR', 'assets/neutralToRed.png', { frameWidth: 64, frameHeight: 64 });
-    this.load.spritesheet('NTG', 'assets/neutralToGreen.png', { frameWidth: 64, frameHeight: 64 });
-    this.load.spritesheet('NTB', 'assets/neutralToBlue.png', { frameWidth: 64, frameHeight: 64 });
+    this.load.spritesheet('NTR', 'assets/red/Caelenberghe_Reverse.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('NTG', 'assets/green/Standaert_Reverse.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('NTB', 'assets/blue/Durivet_Reverse.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('NTY', 'assets/yellow/Bruynooghe_Reverse.png', { frameWidth: 100, frameHeight: 100 });
+
+    this.load.spritesheet('RR', 'assets/red/Caelenberghe_Run.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('GR', 'assets/green/Standaert_Run.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('BR', 'assets/blue/Durivet_Run.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('YR', 'assets/yellow/Bruynooghe_Run.png', { frameWidth: 100, frameHeight: 100 });
+
+    this.load.spritesheet('RJ', 'assets/red/Caelenberghe_Jump.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('GJ', 'assets/green/Standaert_Jump.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('BJ', 'assets/blue/Durivet_Jump.png', { frameWidth: 100, frameHeight: 100 });
+    this.load.spritesheet('YJ', 'assets/yellow/Bruynooghe_Jump.png', { frameWidth: 100, frameHeight: 100 });
 }
 
 function create ()
@@ -77,42 +88,112 @@ function create ()
     this.anims.create({
         key: 'redToNeutral',
         frames: this.anims.generateFrameNumbers('RTN'),
-        frameRate: 30,
+        frameRate: 10,
         repeat: false
     });
 
     this.anims.create({
         key: 'greenToNeutral',
         frames: this.anims.generateFrameNumbers('GTN'),
-        frameRate: 30,
+        frameRate: 10,
         repeat: false
     });
 
     this.anims.create({
         key: 'blueToNeutral',
         frames: this.anims.generateFrameNumbers('BTN'),
-        frameRate: 30,
+        frameRate: 10,
         repeat: false
     });
 
     this.anims.create({
-        key: 'neutralToRed',
+        key: 'yellowToNeutral',
+        frames: this.anims.generateFrameNumbers('YTN'),
+        frameRate: 10,
+        repeat: false
+    });
+
+    this.anims.create({
+        key: 'neutralTored',
         frames: this.anims.generateFrameNumbers('NTR'),
-        frameRate: 30,
+        frameRate: 10,
         repeat: false
     });
 
     this.anims.create({
-        key: 'neutralToGreen',
+        key: 'neutralTogreen',
         frames: this.anims.generateFrameNumbers('NTG'),
-        frameRate: 30,
+        frameRate: 10,
         repeat: false
     });
 
     this.anims.create({
-        key: 'neutralToBlue',
+        key: 'neutralToblue',
         frames: this.anims.generateFrameNumbers('NTB'),
-        frameRate: 30,
+        frameRate: 10,
+        repeat: false
+    });
+
+    this.anims.create({
+        key: 'neutralToyellow',
+        frames: this.anims.generateFrameNumbers('NTY'),
+        frameRate: 10,
+        repeat: false
+    });
+
+    this.anims.create({
+        key: 'redRun',
+        frames: this.anims.generateFrameNumbers('RR'),
+        frameRate: 5,
+        repeat: -1
+    });
+
+    this.anims.create({
+        key: 'redJump',
+        frames: this.anims.generateFrameNumbers('RJ'),
+        frameRate: 5,
+        repeat: false
+    });
+
+    this.anims.create({
+        key: 'greenRun',
+        frames: this.anims.generateFrameNumbers('GR'),
+        frameRate: 5,
+        repeat: -1
+    });
+
+    this.anims.create({
+        key: 'greenJump',
+        frames: this.anims.generateFrameNumbers('GJ'),
+        frameRate: 5,
+        repeat: false
+    });
+
+    this.anims.create({
+        key: 'blueRun',
+        frames: this.anims.generateFrameNumbers('BR'),
+        frameRate: 5,
+        repeat: -1
+    });
+
+    this.anims.create({
+        key: 'blueJump',
+        frames: this.anims.generateFrameNumbers('BJ'),
+        frameRate: 5,
+        repeat: false
+    });
+
+    this.anims.create({
+        key: 'yellowRun',
+        frames: this.anims.generateFrameNumbers('YR'),
+        frameRate: 5,
+        repeat: -1
+    });
+
+    this.anims.create({
+        key: 'yellowJump',
+        frames: this.anims.generateFrameNumbers('YJ'),
+        frameRate: 5,
         repeat: false
     });
 
@@ -128,30 +209,27 @@ function create ()
 
         let pane = outerThis.physics.add.sprite(x,y, color).setOrigin(0,0).setGravityY(-gravity);
         pane.setDisplaySize(paneWidth,paneHeight);
-        pane.setImmovable();
+        //pane.setImmovable();
         pane.width = paneWidth;
         pane.height = paneHeight;
-        //pane.body.immovable = true;
         pane.color = color;
         //pane.setBlendMode(Phaser.BlendModes.DIFFERENCE);
         pane.setVelocityX(-gameSpeed);
-        pane.setMass(3);
-        pane.setMaxVelocity(gameSpeed, 1000);
+        pane.setMass(1000);
+        pane.setMaxVelocity(gameSpeed, 0);
         panes[color].push(pane);
     }
 
-    player = this.physics.add.sprite(maxPlayerPosition, groundY, "red");
+    player = this.physics.add.sprite(maxPlayerPosition, groundY, "RR");
     player.setBounce(bounce);
     player.isDead = false;
     player.body.setGravityY(gravity);
-    player.height = 100;
-    player.width = 100;
-    player.setDisplaySize(100,100);
     player.color = "red";
     player.setAccelerationX(gameSpeed/2);
     player.setVelocityX(gameSpeed);
     player.setMaxVelocity(gameSpeed,1000);
     player.setMass(2);
+    player.transforming = false;
 
     ground = this.physics.add.sprite(0, height*9/10, 'ground').setOrigin(0,0).setGravityY(-gravity);
     ground.width = width*widthMultiplier;
@@ -175,7 +253,9 @@ function create ()
     colliders.blue.active = false;
     colliders.yellow.active = false;
 
-    turnRed();
+
+    let random = Math.floor(Math.random() * 4);
+    turn(colorArray[random]);
 
     //CAMERA STUFF
     camera = this.cameras.main.setSize(width, height);
@@ -193,8 +273,13 @@ function update ()
         player.x = maxPlayerPosition;
     }
 
-    if (cursors.up.isDown&& player.body.touching.down){
+    if (player.body.touching.down&&!player.transforming){
+        player.anims.play(player.color+"Run",true);
+    }
+
+    if (cursors.up.isDown&&player.body.touching.down){
         player.setVelocityY(-jump);
+        player.anims.play(player.color+"Jump",true);
     }
 
     if(pauzeKey.isDown){
@@ -211,19 +296,19 @@ function update ()
     }
 
     if(redKey.isDown){
-        turnRed();
+        turn("red");
     }
 
     if(greenKey.isDown){
-        turnGreen();
+        turn("green");
     }
 
     if(blueKey.isDown){
-        turnBlue();
+        turn("blue");
     }
 
     if(yellowKey.isDown){
-        turnYellow();
+        turn("yellow");
     }
 }
 
@@ -253,35 +338,20 @@ function turnNeutral(){
     colliders.blue.active = false;
     colliders.yellow.active = false;
 }
-function turnRed(){
+function turn(color){
+    player.transforming = true;
+
     turnNeutral();
-    setTimeout(function(){
-        player.anims.play("neutralToRed");
-        player.color = "red";
-        colliders.red.active = true;
-    },300);
-}
-function turnGreen(){
-    turnNeutral();
-    setTimeout(function(){
-        player.anims.play("neutralToGreen");
-        player.color = "green";
-        colliders.green.active = true;
-    },300);
-}
-function turnBlue(){
-    turnNeutral();
-    setTimeout(function(){
-        player.anims.play("neutralToBlue");
-        player.color = "blue";
-        colliders.blue.active = true;
-    },300);
-}
-function turnYellow(){
-    turnNeutral();
-    setTimeout(function(){
-        player.anims.play("neutralToBlue");
-        player.color = "yellow";
-        colliders.yellow.active = true;
-    },300);
+    setTimeout(function () {
+        colliders[color].active = true;
+    },200);
+
+    setTimeout(function () {
+        player.anims.play("neutralTo"+color,true);
+        player.color = color;
+    },400);
+
+    setTimeout(function () {
+        player.transforming = false;
+    },800);
 }
