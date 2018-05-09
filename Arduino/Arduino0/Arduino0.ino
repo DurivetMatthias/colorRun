@@ -1,3 +1,9 @@
+#include <Wire.h>
+
+Potentio
+
+
+
 void setup() {
   // put your setup code here, to run once:
 
