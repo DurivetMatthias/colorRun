@@ -22,18 +22,21 @@ rl.on('line', sendData);
 function onOpen()
 {
     console.log("open connection");
+
+
 }
 
 function onrecieveData(data)
 {
     //console.log(data.toString());
     socket.emit("order",data.toString());
+    //sendData("Y");
 }
 
 function sendData(data)
 {
-    console.log("sending to serial: " + data);
-    myPort.write(data + "\n");
+    //console.log("sending to serial: " + data);
+    myPort.write(data);
 }
 
 function showError(error)
@@ -41,8 +44,12 @@ function showError(error)
     console.log('Serial port error: ' + error);
 }
 
+socket.on("L", function(){
+    sendData("L");
+});
+
 socket.on("connection",function (socket) {
-    //console.log("Connection received");
+    console.log("Connection received");
 
 
 

@@ -300,10 +300,14 @@ function winGame(){
 
 }
 
-
+function loseGame()
+{
+    socket.emit("L");
+}
 
 function init()
 {
+
 
 
     socket.on("order",function(msg){
