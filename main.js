@@ -24,7 +24,7 @@ const theoreticalFramesPerSecond = 60;
 const groundY = height*7/10;
 const jump = 900;
 const widthMultiplier = 50;
-const gameSpeed = 500; //pixels per frame
+const gameSpeed = 300; //pixels per frame
 const colorArray = ['red','green','blue','yellow'];
 const colliders = {red: null,green: null,blue: null,yellow: null};
 
