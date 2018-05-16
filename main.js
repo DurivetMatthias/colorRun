@@ -17,14 +17,14 @@ let lastPauzeTime = Date.now();
 
 const width = 1600;
 const height = 700;
-const maxPlayerPosition = width/2;
+const maxPlayerPosition = width/3;
 const bounce = 0.1;
 const gravity = 1000;
 const theoreticalFramesPerSecond = 60;
 const groundY = height*7/10;
 const jump = 900;
 const widthMultiplier = 50;
-const gameSpeed = 500; //pixels per frame
+const gameSpeed = 300; //pixels per frame
 const colorArray = ['red','green','blue','yellow'];
 const colliders = {red: null,green: null,blue: null,yellow: null};
 
@@ -203,7 +203,7 @@ function create ()
         /*let paneWidth = Math.floor(Math.random() * width/50) + width/50;
         let paneHeight = Math.floor(Math.random() * height/50)+ height/50;*/
         let paneWidth = 80;
-        let paneHeight = 20;
+        let paneHeight = 80;
         let colorIndex = Math.floor(Math.random() * 4);
         let color = colorArray[colorIndex];
 
@@ -225,7 +225,7 @@ function create ()
     player.isDead = false;
     player.body.setGravityY(gravity);
     player.color = "red";
-    player.setAccelerationX(gameSpeed/2);
+    player.setAccelerationX(gameSpeed);
     player.setVelocityX(gameSpeed);
     player.setMaxVelocity(gameSpeed,1000);
     player.setMass(2);
