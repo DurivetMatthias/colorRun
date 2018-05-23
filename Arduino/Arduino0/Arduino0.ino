@@ -6,10 +6,12 @@ int potentio = A0;
 int RGBred =9;
 int RGBblue=10;
 int RGBgreen=11;
-int piezo;
+int piezo = 12;
 
 int potenwaarde=0;
 
+boolean pausebutton = true;
+char color ;
 
 
 void setup() {
@@ -19,6 +21,10 @@ pinMode(RGBred, OUTPUT);
 pinMode(RGBblue, OUTPUT);
 pinMode(RGBgreen, OUTPUT);
 pinMode(piezo, OUTPUT);
+
+
+   Wire.begin(42);                // join i2c bus with address #8
+  Wire.onReceive(receiveEvent); // register event
 
   
 
@@ -36,11 +42,29 @@ void loop() {
   
   potenwaarde = analogRead(potentio);
   delay(10);
-  char color = processpotent(potenwaarde);
+  char newcolor = processpotent(potenwaarde);
+  if (color != newcolor){
+    color = newcolor;
   Serial.print(color);
+  }
+
+  if (Serial.available() > 0) {
+                // read the incoming byte:
+                char incomming = Serial.read();
+
+                // say what you got:
+                Serial.print(incomming);
+               sendWithWire(incomming);
+        }
 
 
+}
 
+
+void sendWithWire(char x){
+    Wire.beginTransmission(42); // transmit to device #8
+  Wire.write(x);        // sends five bytes
+  Wire.endTransmission();    // stop transmitting
 }
 
 
@@ -65,7 +89,13 @@ char processpotent(int potentwaarde){
   }
   };
 
-  
+  void receiveEvent(int bytes) { 
+
+
+  char c = Wire.read(); // receive byte as a character
+    Serial.print(c);         // print the character
+
+}
 
 
   void setColor(int red, int green, int blue)
@@ -75,6 +105,3 @@ char processpotent(int potentwaarde){
   analogWrite(RGBblue, blue);  
 }
 
-void receiveEvent(int bytes) { 
-   // x = Wire.read();
-}

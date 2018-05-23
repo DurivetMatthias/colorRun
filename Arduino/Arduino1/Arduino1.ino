@@ -3,10 +3,13 @@
 #include <Servo.h>
 
 #include <Wire.h>
+int button = 13;                                                      ;
+int tilt=12;
+Servo servo;
+LiquidCrystal lcd(7, 6, 4, 5, 8, 9);
 
-int button;
-int tilt;
-Servo servo.attach();
+boolean pausebutton;
+boolean jump;
 
 
 volatile byte state = LOW;
@@ -18,51 +21,60 @@ void setup() {
   // put your setup code here, to run once:
 
 
-  pinMode(ledPin, OUTPUT);
+lcd.begin(10,2);
   
   pinMode(button, INPUT);
-  attachInterrupt(button, buttonIsr1, FALLING);
 
-    pinMode(tilt, INPUT);
-  attachInterrupt(tilt, buttonIsr1, FALLING);
+   pinMode(tilt, INPUT);
 
-  
+   Wire.begin(44);                // join i2c bus with address #8
+  Wire.onReceive(receiveEvent); // register event
+
+
+//  servo.attach();
+lcd.print("works");                                            
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  delay(20);
+  if(digitalRead(button)== HIGH){
+    if(!pausebutton){
+    sendWithWire('P');
+    pausebutton = true;
+        lcd.clear();
+    lcd.print("Pauze");
+    }
+  }
+  else(pausebutton=false);
+    if(digitalRead(tilt)== LOW){
+      if(!jump){
+    sendWithWire('J');
+    jump = true;
+    lcd.clear();
+    lcd.print("Jump");
+    }
+  }
+  else(jump = false);
+}
 
+void sendWithWire(char x){
+    Wire.beginTransmission(42); // transmit to device #8
+  Wire.write(x);        // sends five bytes
+  Wire.endTransmission();    // stop transmitting
 }
 
 void receiveEvent(int bytes) { 
-   x = Wire.read();
+
+    char c = Wire.read(); // receive byte as a character
+    lcd.print(c);         // print the character
+  
+
+  
+
 }
 
 
-void buttonIsr1() {
-    //Get the current milliseconds
-    unsigned long currentMillis = millis();
-
-    //When the difference between the current millisevonds and the previous milliseconds the intterupt fired is bigger or equal to the interval the function can be executed
-    if (currentMillis - previousMillis >= interval) 
-    { 
-      previousMillis = currentMillis; //store the milliseconds when the function has been executed
-      state = !state;
-
-      //TODO: do something
-    }
-}
 
 
-void tiltIsr1() {
-    //Get the current milliseconds
-    unsigned long currentMillis = millis();
 
-    //When the difference between the current millisevonds and the previous milliseconds the intterupt fired is bigger or equal to the interval the function can be executed
-    if (currentMillis - previousMillis >= interval) 
-    { 
-      previousMillis = currentMillis; //store the milliseconds when the function has been executed
-      state = !state;
-      //TODO: do something
-    }
-}
