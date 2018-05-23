@@ -94,9 +94,9 @@ function preload ()
 function create ()
 {
     outerThis = this;
-    let musicPromise = new Promise(function (resolve) {
+    /*let musicPromise = new Promise(function (resolve) {
         music = outerThis.sound.add('nyan');
-        resolve();
+        return resolve();
     });
 
     musicPromise.then(function () {
@@ -104,7 +104,11 @@ function create ()
         music.play();
     }).catch(function () {
         console.log(music, "oops");
-    });
+    });*/
+
+    music = outerThis.sound.add('nyan');
+    music.volume = 0.05;
+    music.play();
 
     background = this.add.tileSprite(0, 0, width*widthMultiplier*100, height, "background").setOrigin(0,0);
     cursors = this.input.keyboard.createCursorKeys();
@@ -317,7 +321,7 @@ function create ()
     colliders.yellow.active = false;
 
     timerTextField = this.add.text(width/2, height/10, getGameTime(), { backgroundColor: '#888888', color: '#000000', font: '18pt Arial' }).setPadding(32, 16).setOrigin(0.5,0.5).setScrollFactor(0);
-    timerTextField.z = 10;
+    timerTextField.setDepth(2);
 
     let random = Math.floor(Math.random() * 4);
     turn(colorArray[random]);
@@ -446,7 +450,7 @@ function onEnemyCollision(player) {
 function playEndCutscene() {
     camera.flash(1000);
     endScenePlaying = true;
-    outerThis.add.image(0,0,'endScene').setOrigin(0).setDisplaySize(width, height).setScrollFactor(0);
+    outerThis.add.image(0,0,'endScene').setOrigin(0).setDisplaySize(width, height).setScrollFactor(0).setDepth(1);
 }
 function pauzeAll() {
     player.anims.stop();
