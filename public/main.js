@@ -17,6 +17,9 @@ let time = 0;
 let timerTextField;
 let endScenePlaying = false;
 let music;
+//socket
+const socket = io();
+let order;
 
 const width = 1600;
 const height = 700;
@@ -30,6 +33,11 @@ const widthMultiplier = 50;
 const gameSpeed = 300; //pixels per frame
 const colorArray = ['red','green','blue','yellow'];
 const colliders = {red: null,green: null,blue: null,yellow: null};
+
+socket.on("order",function(msg){
+    console.log(msg);
+    order = msg;
+})
 
 const config = {
     type: Phaser.AUTO,
@@ -107,7 +115,7 @@ function create ()
     });*/
 
     music = outerThis.sound.add('nyan');
-    music.volume = 0.05;
+    music.volume = 1;
     music.play();
 
     background = this.add.tileSprite(0, 0, width*widthMultiplier*100, height, "background").setOrigin(0,0);
@@ -389,9 +397,52 @@ function update ()
                 turn("yellow");
             }
         }
+
+        //code to receive commands from arduino
+        switch(order){
+            case "J":
+                jumpUp();
+                break;
+            case "P":
+                pauseGame();
+                break;
+            case "R":
+                turn('red');
+                break;
+            case "B":
+                turn('blue');
+                break;
+            case "G":
+                turn('green');
+                break;
+            case "Y":
+                turn('yellow');
+                break;
+
+        }
+
+        order = "";
+    }
+
+
+}
+function jumpUp()
+{
+    if (player.body.touching.down){
+        player.setVelocityY(-jump);
+        player.anims.play(player.color+"Jump",true);
     }
 }
 
+function pauseGame()
+{
+    if(Date.now()-lastPauzeTime>300){ // DEBOUNCING
+        lastPauzeTime = Date.now();
+        pauzed = !pauzed;
+        if(pauzed) pauzeAll();
+        else unpauzeAll();
+    }
+}
 function setPaneVelocity(amount) {
     panes.red.forEach(p => p.setVelocityX(amount));
     panes.green.forEach(p => p.setVelocityX(amount));

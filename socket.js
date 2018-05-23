@@ -4,7 +4,7 @@ var users = [];
 var serialport = require('serialport');
 var readline = require('readline');
 
-var portname = "COM5";
+var portname = "COM6";
 
 var myPort = new serialport(portname, {
     baudRate: 9600
