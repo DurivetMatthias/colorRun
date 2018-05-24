@@ -146,15 +146,15 @@ function preload ()
     let spriteHeight = 75;
     let spriteWidth = 101;
 
-    this.load.spritesheet('RTN', 'assets/red/Caelenberghe_Transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('GTN', 'assets/green/Standaert_Transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('BTN', 'assets/blue/Durivet_Transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('YTN', 'assets/yellow/Bruynooghe_Transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('RTN', 'assets/red/transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('GTN', 'assets/green/transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('BTN', 'assets/blue/transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('YTN', 'assets/yellow/transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
 
-    this.load.spritesheet('NTR', 'assets/red/Caelenberghe_Reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('NTG', 'assets/green/Standaert_Reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('NTB', 'assets/blue/Durivet_Reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('NTY', 'assets/yellow/Bruynooghe_Reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('NTR', 'assets/red/reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('NTG', 'assets/green/reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('NTB', 'assets/blue/reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('NTY', 'assets/yellow/reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
 
     this.load.spritesheet('RR', 'assets/red/Caelenberghe_Run.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
     this.load.spritesheet('GR', 'assets/green/Standaert_Run.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
