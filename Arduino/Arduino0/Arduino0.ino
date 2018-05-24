@@ -12,6 +12,7 @@ int potenwaarde=0;
 
 boolean pausebutton = true;
 char color ;
+String toProcessHere = "S";
 
 
 void setup() {
@@ -39,7 +40,6 @@ Serial.begin(9600);
 void loop() {
   // put your main code here, to run repeatedly:
 
-  
   potenwaarde = analogRead(potentio);
   delay(10);
   char newcolor = processpotent(potenwaarde);
@@ -55,10 +55,15 @@ void loop() {
                 char incomming = Serial.read();
 
                 // say what you got:
-                Serial.print(incomming);
+                
+                  sendWithWire(incomming);
+                 
+                  processIncommingSerial(incomming);
+                  
                
         }
 
+       
 
 }
 
@@ -92,11 +97,12 @@ char processpotent(int potentwaarde){
   }
   };
 
-  void receiveEvent(int bytes) { 
+ void receiveEvent(int bytes) { 
 
 
   char c = Wire.read(); // receive byte as a character
     Serial.print(c);         // print the character
+    processIncommingWire(c);
 
 }
 
@@ -107,4 +113,17 @@ char processpotent(int potentwaarde){
   analogWrite(RGBgreen, green);
   analogWrite(RGBblue, blue);  
 }
+
+void processIncommingSerial(char c){
+  if (c == 'S'){
+    Serial.print(color);
+  }
+ 
+}
+void processIncommingWire(char c){
+  if (c == 'J'){
+    tone(piezo,1000, 100);
+  }
+}
+
 
