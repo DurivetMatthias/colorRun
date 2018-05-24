@@ -1,10 +1,9 @@
 var io = require("socket.io");
 var socket = io();
-var users = [];
 var serialport = require('serialport');
 var readline = require('readline');
 
-var portname = "COM6";
+var portname = "COM3";
 
 var myPort = new serialport(portname, {
     baudRate: 9600
@@ -22,8 +21,6 @@ rl.on('line', sendData);
 function onOpen()
 {
     console.log("open connection");
-
-
 }
 
 function onrecieveData(data)
@@ -48,13 +45,12 @@ socket.on("L", function(){
     sendData("L");
 });
 
-socket.on("connection",function (socket) {
-    console.log("Connection received");
-
-
-
+socket.on("S", function(){
+    sendData("S");
 });
 
-
+socket.on("connection",function () {
+    console.log("Connection received");
+});
 
 module.exports = socket;
