@@ -46,6 +46,8 @@ void loop() {
   if (color != newcolor){
     color = newcolor;
   Serial.print(color);
+  sendWithWire(color);
+
   }
 
   if (Serial.available() > 0) {
@@ -54,7 +56,7 @@ void loop() {
 
                 // say what you got:
                 Serial.print(incomming);
-               sendWithWire(incomming);
+               
         }
 
 
@@ -62,7 +64,7 @@ void loop() {
 
 
 void sendWithWire(char x){
-    Wire.beginTransmission(42); // transmit to device #8
+    Wire.beginTransmission(44); // transmit to device #8
   Wire.write(x);        // sends five bytes
   Wire.endTransmission();    // stop transmitting
 }
@@ -70,6 +72,7 @@ void sendWithWire(char x){
 
 char processpotent(int potentwaarde){
   int range = 1024;
+  
   if (potentwaarde<(range*0.1)){
     setColor(0,0,255);
     return('B');

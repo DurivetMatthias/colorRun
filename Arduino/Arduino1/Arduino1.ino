@@ -9,6 +9,7 @@ Servo servo;
 LiquidCrystal lcd(7, 6, 4, 5, 8, 9);
 
 boolean pausebutton;
+boolean play = false;
 boolean jump;
 
 
@@ -21,7 +22,7 @@ void setup() {
   // put your setup code here, to run once:
 
 
-lcd.begin(10,2);
+lcd.begin(16,2);
   
   pinMode(button, INPUT);
 
@@ -32,7 +33,9 @@ lcd.begin(10,2);
 
 
 //  servo.attach();
-lcd.print("works");                                            
+lcd.print("Color Run");
+lcd.setCursor(0,1);
+lcd.print("Push the button to play");                                        
 }
 
 void loop() {
@@ -42,13 +45,18 @@ void loop() {
     if(!pausebutton){
     sendWithWire('P');
     pausebutton = true;
+    play = !play;
         lcd.clear();
-    lcd.print("Pauze");
+
+        if (play){
+          lcd.print("Play");
+        }else{
+    lcd.print("Pauze");}
     }
   }
   else(pausebutton=false);
     if(digitalRead(tilt)== LOW){
-      if(!jump){
+      if(!jump && play){
     sendWithWire('J');
     jump = true;
     lcd.clear();
@@ -67,12 +75,31 @@ void sendWithWire(char x){
 void receiveEvent(int bytes) { 
 
     char c = Wire.read(); // receive byte as a character
-    lcd.print(c);         // print the character
-  
+    
+          
+   showCollor(c);
 
   
 
 }
+
+void showCollor(char c){
+  
+  if (play){
+    lcd.clear();
+   if(c == 'R'){
+      lcd.print("Red"); 
+    }
+    if(c == 'Y'){
+      lcd.print("Yellow"); 
+    }
+    if(c == 'G'){
+      lcd.print("Green"); 
+    }
+    if(c == 'B'){
+      lcd.print("Blue"); 
+    }
+}}
 
 
 
