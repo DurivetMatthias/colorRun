@@ -41,17 +41,25 @@ let startScenePlaying = false;
 let actionObject = {jump: false, color: initialColor, pauze: false};
 const socket = io();
 
+
+const colorDictionary = {
+    'R': 'red',
+    'B': 'blue',
+    'G': 'green',
+    'Y': 'yellow'
+};
+
 socket.on("order",function(data){
-    //console.log(data);
+    console.log(data);
     switch (data) {
-        case "p":
+        case "P":
             actionObject.pauze = true;
             break;
-        case "j":
+        case "J":
             actionObject.jump = true;
             break;
         default:
-            actionObject.color = data;
+            actionObject.color = colorDictionary[data];
     }
     //order = data;
 });
@@ -391,7 +399,7 @@ function create ()
 
     turn(initialColor);
 
-    socket.emit("S");
+    socket.emit("order","S");
 
     pauzeAll();
     playStartScene();
@@ -434,7 +442,7 @@ function update ()
 
     if(player.isDead){
         if(!endScenePlaying) {
-            socket.emit("L");
+            socket.emit("order","L");
             playEndCutscene();
             pauzed = true;
             pauzeAll();

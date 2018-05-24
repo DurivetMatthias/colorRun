@@ -3,7 +3,7 @@ var socket = io();
 var serialport = require('serialport');
 var readline = require('readline');
 
-var portname = "COM3";
+var portname = "COM6";
 
 var myPort = new serialport(portname, {
     baudRate: 9600
@@ -41,16 +41,13 @@ function showError(error)
     console.log('Serial port error: ' + error);
 }
 
-socket.on("L", function(){
-    sendData("L");
-});
 
-socket.on("S", function(){
-    sendData("S");
-});
-
-socket.on("connection",function () {
+socket.on("connection",function (newSocket) {
     console.log("Connection received");
+    newSocket.on("order", function(msg){
+        console.log(msg);
+        sendData(msg);
+    });
 });
 
 module.exports = socket;
