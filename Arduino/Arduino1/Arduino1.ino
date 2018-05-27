@@ -33,9 +33,7 @@ lcd.begin(16,2);
 
 
 //  servo.attach();
-lcd.print("Color Run");
-lcd.setCursor(0,1);
-lcd.print("Push the button to play");                                        
+start();                                 
 }
 
 void loop() {
@@ -77,13 +75,25 @@ void receiveEvent(int bytes) {
     char c = Wire.read(); // receive byte as a character
     
           
-   showCollor(c);
+   processIncomming(c);
 
   
 
 }
 
-void showCollor(char c){
+void processIncomming(char c){
+
+  if (c == 'L'){
+    lcd.clear();
+    lcd.setCursor(0,0);
+    lcd.print("You died");
+    delay(200000);
+    lcd.setCursor(5,1);
+    lcd.print("Bitch");
+    play = false;
+    delay(1000000);
+    start();
+  }
   
   if (play){
     lcd.clear();
@@ -100,6 +110,14 @@ void showCollor(char c){
       lcd.print("Blue"); 
     }
 }}
+
+void start(){
+  lcd.clear();
+  lcd.print("Color Run");
+lcd.setCursor(0,1);
+lcd.print("Push the button to play");   
+  
+  }
 
 
 
