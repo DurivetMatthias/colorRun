@@ -1,26 +1,3 @@
-let background;
-let player;
-let enemies = [];
-let ground = [];
-let cursors;
-let camera;
-let panes = {red:[], green:[], blue:[], yellow:[]};
-let outerThis;
-let pauzed = false;
-let pauzeKey;
-let redKey;
-let greenKey;
-let blueKey;
-let yellowKey;
-let lastPauzeTime = Date.now();
-let time = 0;
-let timerTextField;
-let endScenePlaying = false;
-let music;
-//socket
-const socket = io();
-let order;
-
 const width = 1600;
 const height = 700;
 const maxPlayerPosition = width/3;
@@ -33,11 +10,59 @@ const widthMultiplier = 50;
 const gameSpeed = 300; //pixels per frame
 const colorArray = ['red','green','blue','yellow'];
 const colliders = {red: null,green: null,blue: null,yellow: null};
+const initialColor = "red";
 
-socket.on("order",function(msg){
-    console.log(msg);
-    order = msg;
-})
+let startScene;
+let startText;
+let restartScene;
+let restartText;
+let background;
+let player;
+let enemies = [];
+let ground = [];
+let cursors;
+let camera;
+let panes = {red:[], green:[], blue:[], yellow:[]};
+let outerThis;
+let pauzed = true;
+let pauzeKey;
+let redKey;
+let greenKey;
+let blueKey;
+let yellowKey;
+let lastPauzeTime = Date.now();
+let time = 0;
+let timerTextField;
+let endScenePlaying = false;
+let endScene;
+let music;
+let startScenePlaying = false;
+
+let actionObject = {jump: false, color: initialColor, pauze: false};
+const socket = io();
+
+
+const colorDictionary = {
+    'R': 'red',
+    'B': 'blue',
+    'G': 'green',
+    'Y': 'yellow'
+};
+
+socket.on("order",function(data){
+    console.log(data);
+    switch (data) {
+        case "P":
+            actionObject.pauze = true;
+            break;
+        case "J":
+            actionObject.jump = true;
+            break;
+        default:
+            actionObject.color = colorDictionary[data];
+    }
+    //order = data;
+});
 
 const config = {
     type: Phaser.AUTO,
@@ -61,6 +86,53 @@ let game = new Phaser.Game(config);
 
 function preload ()
 {
+    let loadingText = this.make.text({
+        x: width / 2,
+        y: height / 2 - 50,
+        text: 'Loading...',
+        style: {
+            font: '20px monospace',
+            fill: '#ffffff'
+        }
+    });
+    loadingText.setOrigin(0.5, 0.5);
+
+    const progressBar = this.add.graphics();
+    const progressBox = this.add.graphics();
+
+    progressBox.fillStyle(0x222222, 0.8);
+    progressBox.fillRect(width/2 - 160, height/2, 320, 50);
+
+    var percentText = this.make.text({
+        x: width / 2,
+        y: height / 2 + 25,
+        text: '0%',
+        style: {
+            font: '18px monospace',
+            fill: '#ffffff'
+        }
+    });
+    percentText.setOrigin(0.5, 0.5);
+
+    this.load.on('progress', function (value) {
+        percentText.setText(parseInt(value * 100) + '%');
+        progressBar.clear();
+        progressBar.fillStyle(0xffffff, 1);
+        progressBar.fillRect(width/2 + 10 - 160, height/2 + 10, 300 * value, 30);
+    });
+
+    this.load.on('fileprogress', function (file) {
+        console.log(file.src);
+    });
+
+    this.load.on('complete', function () {
+
+        percentText.destroy();
+        loadingText.destroy();
+        progressBar.destroy();
+        progressBox.destroy();
+    });
+
     this.load.image('ground', 'assets/platform.png');
     this.load.image('background', 'assets/space.jpg');
     this.load.image('red', 'assets/red.png');
@@ -74,15 +146,15 @@ function preload ()
     let spriteHeight = 75;
     let spriteWidth = 101;
 
-    this.load.spritesheet('RTN', 'assets/red/Caelenberghe_Transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('GTN', 'assets/green/Standaert_Transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('BTN', 'assets/blue/Durivet_Transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('YTN', 'assets/yellow/Bruynooghe_Transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('RTN', 'assets/red/transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('GTN', 'assets/green/transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('BTN', 'assets/blue/transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('YTN', 'assets/yellow/transform.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
 
-    this.load.spritesheet('NTR', 'assets/red/Caelenberghe_Reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('NTG', 'assets/green/Standaert_Reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('NTB', 'assets/blue/Durivet_Reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
-    this.load.spritesheet('NTY', 'assets/yellow/Bruynooghe_Reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('NTR', 'assets/red/reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('NTG', 'assets/green/reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('NTB', 'assets/blue/reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
+    this.load.spritesheet('NTY', 'assets/yellow/reverse.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
 
     this.load.spritesheet('RR', 'assets/red/Caelenberghe_Run.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
     this.load.spritesheet('GR', 'assets/green/Standaert_Run.png', { frameWidth: spriteWidth, frameHeight: spriteHeight });
@@ -97,161 +169,155 @@ function preload ()
     this.load.spritesheet('shadows', 'assets/shadow.png', { frameWidth: 200, frameHeight: 200 });
     this.load.spritesheet('nyancat', 'assets/nyancat.png', { frameWidth: 212, frameHeight: 77 });
     this.load.spritesheet('rainbow', 'assets/rainbow.png', { frameWidth: 200, frameHeight: 77 });
+
+    outerThis = this;
 }
 
 function create ()
 {
-    outerThis = this;
-    /*let musicPromise = new Promise(function (resolve) {
-        music = outerThis.sound.add('nyan');
-        return resolve();
-    });
+    function loadMusic() {
+        return new Promise(function (resolve) {
+            music = outerThis.sound.add('nyan');
+            music.play();
+            resolve();
+        });
+    }
+    loadMusic();
 
-    musicPromise.then(function () {
-        music.volume = 0.05;
-        music.play();
-    }).catch(function () {
-        console.log(music, "oops");
-    });*/
-
-    music = outerThis.sound.add('nyan');
-    music.volume = 1;
-    music.play();
-
-    background = this.add.tileSprite(0, 0, width*widthMultiplier*100, height, "background").setOrigin(0,0);
-    cursors = this.input.keyboard.createCursorKeys();
+    background = outerThis.add.tileSprite(0, 0, width*widthMultiplier*100, height, "background").setOrigin(0,0);
+    cursors = outerThis.input.keyboard.createCursorKeys();
 
     //ANIMATION STUFF
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'rainbowAnim',
-        frames: this.anims.generateFrameNumbers('rainbow'),
+        frames: outerThis.anims.generateFrameNumbers('rainbow'),
         frameRate: 7,
         repeat: -1
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'nyancatAnim',
-        frames: this.anims.generateFrameNumbers('nyancat'),
+        frames: outerThis.anims.generateFrameNumbers('nyancat'),
         frameRate: 7,
         repeat: -1
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'shadowAnim',
-        frames: this.anims.generateFrameNumbers('shadows'),
+        frames: outerThis.anims.generateFrameNumbers('shadows'),
         frameRate: 10,
         repeat: -1
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'redToNeutral',
-        frames: this.anims.generateFrameNumbers('RTN'),
+        frames: outerThis.anims.generateFrameNumbers('RTN'),
         frameRate: 10,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'greenToNeutral',
-        frames: this.anims.generateFrameNumbers('GTN'),
+        frames: outerThis.anims.generateFrameNumbers('GTN'),
         frameRate: 10,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'blueToNeutral',
-        frames: this.anims.generateFrameNumbers('BTN'),
+        frames: outerThis.anims.generateFrameNumbers('BTN'),
         frameRate: 10,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'yellowToNeutral',
-        frames: this.anims.generateFrameNumbers('YTN'),
+        frames: outerThis.anims.generateFrameNumbers('YTN'),
         frameRate: 10,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'neutralTored',
-        frames: this.anims.generateFrameNumbers('NTR'),
+        frames: outerThis.anims.generateFrameNumbers('NTR'),
         frameRate: 10,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'neutralTogreen',
-        frames: this.anims.generateFrameNumbers('NTG'),
+        frames: outerThis.anims.generateFrameNumbers('NTG'),
         frameRate: 10,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'neutralToblue',
-        frames: this.anims.generateFrameNumbers('NTB'),
+        frames: outerThis.anims.generateFrameNumbers('NTB'),
         frameRate: 10,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'neutralToyellow',
-        frames: this.anims.generateFrameNumbers('NTY'),
+        frames: outerThis.anims.generateFrameNumbers('NTY'),
         frameRate: 10,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'redRun',
-        frames: this.anims.generateFrameNumbers('RR'),
+        frames: outerThis.anims.generateFrameNumbers('RR'),
         frameRate: 5,
         repeat: -1
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'redJump',
-        frames: this.anims.generateFrameNumbers('RJ'),
+        frames: outerThis.anims.generateFrameNumbers('RJ'),
         frameRate: 5,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'greenRun',
-        frames: this.anims.generateFrameNumbers('GR'),
+        frames: outerThis.anims.generateFrameNumbers('GR'),
         frameRate: 5,
         repeat: -1
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'greenJump',
-        frames: this.anims.generateFrameNumbers('GJ'),
+        frames: outerThis.anims.generateFrameNumbers('GJ'),
         frameRate: 5,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'blueRun',
-        frames: this.anims.generateFrameNumbers('BR'),
+        frames: outerThis.anims.generateFrameNumbers('BR'),
         frameRate: 5,
         repeat: -1
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'blueJump',
-        frames: this.anims.generateFrameNumbers('BJ'),
+        frames: outerThis.anims.generateFrameNumbers('BJ'),
         frameRate: 5,
         repeat: false
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'yellowRun',
-        frames: this.anims.generateFrameNumbers('YR'),
+        frames: outerThis.anims.generateFrameNumbers('YR'),
         frameRate: 5,
         repeat: -1
     });
 
-    this.anims.create({
+    outerThis.anims.create({
         key: 'yellowJump',
-        frames: this.anims.generateFrameNumbers('YJ'),
+        frames: outerThis.anims.generateFrameNumbers('YJ'),
         frameRate: 5,
         repeat: false
     });
@@ -280,11 +346,11 @@ function create ()
         panes[color].push(pane);
     }
 
-    player = this.physics.add.sprite(maxPlayerPosition, groundY/2, "RR");
+    player = outerThis.physics.add.sprite(maxPlayerPosition, groundY/2, "RR");
     player.setBounce(bounce);
     player.isDead = false;
     player.body.setGravityY(gravity);
-    player.color = "red";
+    player.color = initialColor;
     player.setAccelerationX(gameSpeed);
     player.setVelocityX(gameSpeed);
     player.setMaxVelocity(gameSpeed,1000);
@@ -295,137 +361,124 @@ function create ()
     for(let i = 0;i<Math.floor(width/rainbowWidth);i++){
         let temp;
         if(i === 0){
-            temp = this.physics.add.sprite(width*9/10 - (rainbowWidth*i), height, "ground").setOrigin(1,1).setGravityY(-gravity).play("nyancatAnim");
+            temp = outerThis.physics.add.sprite(width*9/10 - (rainbowWidth*i), height, "ground").setOrigin(1,1).setGravityY(-gravity).play("nyancatAnim");
         }else{
-            temp = this.physics.add.sprite(width*9/10 - (rainbowWidth*i), height, "ground").setOrigin(1,1).setGravityY(-gravity).play("rainbowAnim");
+            temp = outerThis.physics.add.sprite(width*9/10 - (rainbowWidth*i), height, "ground").setOrigin(1,1).setGravityY(-gravity).play("rainbowAnim");
         }
         temp.setImmovable(true);
         ground.push(temp);
     }
 
     for(let i = 0; i<Math.ceil(height/200);i++) {
-        let temp = this.physics.add.sprite(100, i * 200, "shadow");
+        let temp = outerThis.physics.add.sprite(100, i * 200, "shadow");
         temp.anims.play("shadowAnim");
         temp.body.width = 20;
         temp.setGravityY(-gravity);
         enemies.push(temp);
     }
 
-    pauzeKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.P);
-    redKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
-    greenKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.G);
-    blueKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.B);
-    yellowKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Y);
+    pauzeKey = outerThis.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.P);
+    redKey = outerThis.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
+    greenKey = outerThis.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.G);
+    blueKey = outerThis.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.B);
+    yellowKey = outerThis.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Y);
 
-    this.physics.add.overlap(player,enemies,onEnemyCollision,null,this);
+    outerThis.physics.add.overlap(player,enemies,onEnemyCollision,null,this);
     ground.forEach(g => outerThis.physics.add.collider(player, g));
-    colliders.red = this.physics.add.collider(player, panes.red);
-    colliders.green = this.physics.add.collider(player, panes.green);
-    colliders.blue = this.physics.add.collider(player, panes.blue);
-    colliders.yellow = this.physics.add.collider(player, panes.yellow);
+    colliders.red = outerThis.physics.add.collider(player, panes.red);
+    colliders.green = outerThis.physics.add.collider(player, panes.green);
+    colliders.blue = outerThis.physics.add.collider(player, panes.blue);
+    colliders.yellow = outerThis.physics.add.collider(player, panes.yellow);
 
     colliders.green.active = false;
     colliders.blue.active = false;
     colliders.yellow.active = false;
 
-    timerTextField = this.add.text(width/2, height/10, getGameTime(), { backgroundColor: '#888888', color: '#000000', font: '18pt Arial' }).setPadding(32, 16).setOrigin(0.5,0.5).setScrollFactor(0);
+    timerTextField = outerThis.add.text(width/2, height/10, getGameTime(), { backgroundColor: '#888888', color: '#000000', font: '18pt Arial' }).setPadding(32, 16).setOrigin(0.5,0.5).setScrollFactor(0);
     timerTextField.setDepth(2);
 
-    let random = Math.floor(Math.random() * 4);
-    turn(colorArray[random]);
+    turn(initialColor);
+
+    socket.emit("order","S");
+
+    pauzeAll();
+    playStartScene();
 
     //CAMERA STUFF
-    camera = this.cameras.main.setSize(width, height);
-    this.cameras.main.setBounds(0, 0, width*widthMultiplier, height);
-    this.cameras.main.startFollow(player);
+    camera = outerThis.cameras.main.setSize(width, height);
+    outerThis.cameras.main.setBounds(0, 0, width*widthMultiplier, height);
+    outerThis.cameras.main.startFollow(player);
 }
 
 function update ()
 {
+    if (player.body.touching.down && !player.transforming) {
+        player.anims.play(player.color + "Run", true);
+    }
+
+    if (cursors.up.isDown && player.body.touching.down) {
+        actionObject.jump = true;
+    }
+
+    if (pauzeKey.isDown) {
+        actionObject.pauze = true;
+    }
+
+    if (redKey.isDown) {
+        actionObject.color = "red";
+    }
+
+    if (greenKey.isDown) {
+        actionObject.color = "green";
+    }
+
+    if (blueKey.isDown) {
+        actionObject.color = "blue";
+    }
+
+    if (yellowKey.isDown) {
+        actionObject.color = "yellow";
+    }
+
     if(player.isDead){
         if(!endScenePlaying) {
+            socket.emit("order","L");
             playEndCutscene();
             pauzed = true;
             pauzeAll();
             player.x = -500
         }
+        if(actionObject.pauze){
+            actionObject.pauze = false;
+            restartGame();
+        }
     }else{
+        if (actionObject.pauze) {
+            pauzeGame();
+            actionObject.pauze = false;
+        }
 
-
-        if(!pauzed){
+        if(!pauzed) {
             moveBackground();
             time++;
             timerTextField.setText(getGameTime());
-        }
 
-        if(player.x > maxPlayerPosition){
-            player.x = maxPlayerPosition;
-        }
-
-        if (player.body.touching.down&&!player.transforming){
-            player.anims.play(player.color+"Run",true);
-        }
-
-        if (cursors.up.isDown&&player.body.touching.down){
-            player.setVelocityY(-jump);
-            player.anims.play(player.color+"Jump",true);
-        }
-
-        if(pauzeKey.isDown){
-            if(Date.now()-lastPauzeTime>300){ // DEBOUNCING
-                lastPauzeTime = Date.now();
-                pauzed = !pauzed;
-                if(pauzed) pauzeAll();
-                else unpauzeAll();
-            }
-        }
-
-        if(!player.transforming){
-            if(redKey.isDown&&player.color!="red"){
-                turn("red");
+            if (player.x > maxPlayerPosition) {
+                player.x = maxPlayerPosition;
             }
 
-            if(greenKey.isDown&&player.color!="green"){
-                turn("green");
-            }
-
-            if(blueKey.isDown&&player.color!="blue"){
-                turn("blue");
-            }
-
-            if(yellowKey.isDown&&player.color!="yellow"){
-                turn("yellow");
-            }
-        }
-
-        //code to receive commands from arduino
-        switch(order){
-            case "J":
+            if (actionObject.jump) {
                 jumpUp();
-                break;
-            case "P":
-                pauseGame();
-                break;
-            case "R":
-                turn('red');
-                break;
-            case "B":
-                turn('blue');
-                break;
-            case "G":
-                turn('green');
-                break;
-            case "Y":
-                turn('yellow');
-                break;
+                actionObject.jump = false;
+            }
 
+            if (actionObject.color !== player.color) {
+                turn(actionObject.color);
+            }
         }
-
-        order = "";
     }
-
-
 }
+
 function jumpUp()
 {
     if (player.body.touching.down){
@@ -434,8 +487,14 @@ function jumpUp()
     }
 }
 
-function pauseGame()
+function restartGame() {
+    location.reload();
+}
+
+function pauzeGame()
 {
+    if(startScenePlaying)endStartScene();
+
     if(Date.now()-lastPauzeTime>300){ // DEBOUNCING
         lastPauzeTime = Date.now();
         pauzed = !pauzed;
@@ -501,7 +560,51 @@ function onEnemyCollision(player) {
 function playEndCutscene() {
     camera.flash(1000);
     endScenePlaying = true;
-    outerThis.add.image(0,0,'endScene').setOrigin(0).setDisplaySize(width, height).setScrollFactor(0).setDepth(1);
+    endScene = outerThis.add.image(0,0,'endScene').setOrigin(0).setDisplaySize(width, height).setScrollFactor(0).setDepth(1);
+    setTimeout(function () {
+        restartText = outerThis.make.text({
+            x: width / 2,
+            y: height / 2 + 25,
+            text: 'Press the button to restart',
+            style: {
+                font: '30px monospace',
+                fill: '#ffffff'
+            }
+        });
+        restartText.setDepth(3);
+        restartText.setOrigin(.5,.5);
+
+        restartScene = outerThis.add.graphics();
+
+        restartScene.fillStyle(0x000000);
+        restartScene.fillRect(width/4,height/4, width/2, height/2);
+        restartScene.setDepth(2);
+    },2000)
+}
+function playStartScene() {
+    startScenePlaying = true;
+    startText = outerThis.make.text({
+        x: width / 2,
+        y: height / 2 + 25,
+        text: 'Press the button to start the game',
+        style: {
+            font: '30px monospace',
+            fill: '#ffffff'
+        }
+    });
+    startText.setDepth(2);
+    startText.setOrigin(.5,.5);
+
+    startScene = outerThis.add.graphics();
+
+    startScene.fillStyle(0x000000);
+    startScene.fillRect(0,0, width, height);
+    startScene.setDepth(1);
+}
+function endStartScene() {
+    endScenePlaying = false;
+    startText.destroy();
+    startScene.destroy();
 }
 function pauzeAll() {
     player.anims.stop();

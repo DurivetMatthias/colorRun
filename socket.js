@@ -1,6 +1,5 @@
 var io = require("socket.io");
 var socket = io();
-var users = [];
 var serialport = require('serialport');
 var readline = require('readline');
 
@@ -22,8 +21,6 @@ rl.on('line', sendData);
 function onOpen()
 {
     console.log("open connection");
-
-
 }
 
 function onrecieveData(data)
@@ -44,17 +41,13 @@ function showError(error)
     console.log('Serial port error: ' + error);
 }
 
-socket.on("L", function(){
-    sendData("L");
-});
 
-socket.on("connection",function (socket) {
+socket.on("connection",function (newSocket) {
     console.log("Connection received");
-
-
-
+    newSocket.on("order", function(msg){
+        console.log(msg);
+        sendData(msg);
+    });
 });
-
-
 
 module.exports = socket;
