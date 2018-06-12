@@ -1,5 +1,6 @@
-const width = 1600;
-const height = 700;
+let width;
+let height;
+initViewportHW();
 const maxPlayerPosition = width/3;
 const bounce = 0.1;
 const gravity = 1000;
@@ -38,6 +39,7 @@ let endScene;
 let music;
 let startScenePlaying = false;
 
+
 let actionObject = {jump: false, color: initialColor, pauze: false};
 const socket = io();
 
@@ -48,6 +50,8 @@ const colorDictionary = {
     'G': 'green',
     'Y': 'yellow'
 };
+
+
 
 socket.on("order",function(data){
     console.log(data);
@@ -83,6 +87,34 @@ const config = {
 };
 
 let game = new Phaser.Game(config);
+
+function initViewportHW() {
+
+    let viewPortWidth;
+    let viewPortHeight;
+
+    // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+    if (window.innerWidth) {
+        viewPortWidth = window.innerWidth;
+        viewPortHeight = window.innerHeight
+    }
+
+    // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+    if (document.documentElement && document.documentElement.clientWidth && document.documentElement.clientWidth != 0) {
+        viewPortWidth = document.documentElement.clientWidth;
+        viewPortHeight = document.documentElement.clientHeight
+    }
+
+    // older versions of IE
+    else {
+        viewPortWidth = document.getElementsByTagName('body')[0].clientWidth;
+        viewPortHeight = document.getElementsByTagName('body')[0].clientHeight
+    }
+
+    width = viewPortWidth;
+    height = viewPortHeight;
+}
 
 function preload ()
 {
