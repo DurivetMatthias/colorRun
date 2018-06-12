@@ -2,16 +2,1069 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1db2ffb-c902-4b5f-b380-67b008cf8e93" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blue/Durivet_Reverse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blue/Durivet_Transform.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/green/Standaert_Reverse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/green/Standaert_Transform.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/red/Caelenberghe_Reverse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/red/Caelenberghe_Transform.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/yellow/Bruynooghe_Reverse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/yellow/Bruynooghe_Transform.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/blue/reverse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/blue/transform.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/green/reverse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/green/transform.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/red/reverse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/red/transform.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/yellow/reverse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/yellow/transform.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.eslintrc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.github/CODE_OF_CONDUCT.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.github/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.github/ISSUE_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/copy-to-examples.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/dist/phaser-arcade-physics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/dist/phaser-arcade-physics.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/dist/phaser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/dist/phaser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/package-lock.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/phaser-logo-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/Angle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/Call.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/GetFirst.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/GetLast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/GridAlign.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/IncAlpha.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/IncX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/IncXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/IncY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/PlaceOnCircle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/PlaceOnEllipse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/PlaceOnLine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/PlaceOnRectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/PlaceOnTriangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/PlayAnimation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/PropertyValueInc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/PropertyValueSet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/RandomCircle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/RandomEllipse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/RandomLine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/RandomRectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/RandomTriangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/Rotate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/RotateAround.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/RotateAroundDistance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/ScaleX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/ScaleXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/ScaleY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetAlpha.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetBlendMode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetDepth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetHitArea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetOrigin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetRotation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetScale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetScaleX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetScaleY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetTint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetVisible.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SetY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/ShiftPosition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/Shuffle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SmoothStep.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/SmootherStep.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/Spread.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/ToggleVisible.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/WrapInRectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/animations/Animation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/animations/AnimationFrame.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/animations/AnimationManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/animations/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/boot/Config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/boot/CreateRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/boot/DebugHeader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/boot/Game.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/boot/PluginManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/boot/TimeStep.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/boot/VisibilityHandler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/boot/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cache/BaseCache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cache/CacheManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cache/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/2d/Camera.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/2d/CameraManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/2d/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/controls/FixedKeyControl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/controls/SmoothedKeyControl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/controls/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/sprite3d/Camera.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/sprite3d/CameraManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/sprite3d/OrthographicCamera.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/sprite3d/PerspectiveCamera.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/cameras/sprite3d/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/create/GenerateTexture.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/create/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/create/palettes/Arne16.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/create/palettes/C64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/create/palettes/CGA.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/create/palettes/JMP.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/create/palettes/MSX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/create/palettes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/CubicBezierCurve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/Curve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/EllipseCurve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/LineCurve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/QuadraticBezierCurve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/SplineCurve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/path/MoveTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/curves/path/Path.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/data/DataManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/data/DataManagerPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/data/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/Audio.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/Browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/CanvasFeatures.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/Features.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/Fullscreen.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/Input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/OS.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/Video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/device/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/BottomCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/BottomLeft.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/BottomRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/Center.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/LeftCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/QuickSet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/RightCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/TopCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/TopLeft.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/TopRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/in/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/BottomCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/BottomLeft.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/BottomRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/LeftBottom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/LeftCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/LeftTop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/RightBottom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/RightCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/RightTop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/TopCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/TopLeft.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/TopRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/align/to/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/CenterOn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/GetBottom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/GetCenterX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/GetCenterY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/GetLeft.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/GetOffsetX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/GetOffsetY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/GetRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/GetTop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/SetBottom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/SetCenterX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/SetCenterY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/SetLeft.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/SetRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/SetTop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/bounds/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/canvas/CanvasInterpolation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/canvas/CanvasPool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/canvas/Smoothing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/canvas/TouchAction.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/canvas/UserSelect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/canvas/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/Color.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/ColorToRGBA.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/ComponentToHex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/GetColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/GetColor32.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/HSLToColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/HSVColorWheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/HSVToRGB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/HexStringToColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/HueToComponent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/IntegerToColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/IntegerToRGB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/Interpolate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/ObjectToColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/RGBStringToColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/RGBToHSV.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/RGBToString.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/RandomRGB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/ValueToColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/color/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/mask/BitmapMask.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/mask/GeometryMask.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/display/mask/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/dom/AddToDOM.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/dom/DOMContentLoaded.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/dom/ParseXML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/dom/RemoveFromDOM.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/dom/RequestAnimationFrame.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/dom/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/events/EventEmitter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/BuildGameObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/BuildGameObjectAnimation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/DisplayList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/GameObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/GameObjectCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/GameObjectFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/UpdateList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/GetBitmapTextSize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/ParseFromAtlas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/ParseRetroFont.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/ParseXMLBitmapFont.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/dynamic/DynamicBitmapText.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/dynamic/DynamicBitmapTextCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/dynamic/DynamicBitmapTextCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/dynamic/DynamicBitmapTextFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/dynamic/DynamicBitmapTextRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/dynamic/DynamicBitmapTextWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/static/BitmapText.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/static/BitmapTextCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/static/BitmapTextCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/static/BitmapTextFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/static/BitmapTextRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/bitmaptext/static/BitmapTextWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/blitter/Blitter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/blitter/BlitterCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/blitter/BlitterCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/blitter/BlitterFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/blitter/BlitterRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/blitter/BlitterWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/blitter/Bob.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Alpha.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Animation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/BlendMode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/ComputedSize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Depth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Flip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/GetBounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/MatrixStack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Origin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Pipeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/ScaleMode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/ScrollFactor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Size.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Texture.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Tint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/ToJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/TransformMatrix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/Visible.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/components/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/graphics/Commands.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/graphics/Graphics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/graphics/GraphicsCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/graphics/GraphicsCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/graphics/GraphicsFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/graphics/GraphicsRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/graphics/GraphicsWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/group/Group.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/group/GroupCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/group/GroupFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/image/Image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/image/ImageCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/image/ImageCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/image/ImageFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/image/ImageRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/image/ImageWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/lights/Light.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/lights/LightsManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/lights/LightsPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/mesh/Mesh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/mesh/MeshCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/mesh/MeshCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/mesh/MeshFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/mesh/MeshRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/mesh/MeshWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/EmitterOp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/GravityWell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/Particle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/ParticleEmitter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/ParticleEmitterManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/ParticleManagerCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/ParticleManagerCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/ParticleManagerFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/ParticleManagerRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/ParticleManagerWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/zones/DeathZone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/zones/EdgeZone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/particles/zones/RandomZone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/pathfollower/PathFollower.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/pathfollower/PathFollowerFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/quad/Quad.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/quad/QuadCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/quad/QuadFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/rendertexture/RenderTexture.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/rendertexture/RenderTextureCanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/rendertexture/RenderTextureCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/rendertexture/RenderTextureCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/rendertexture/RenderTextureFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/rendertexture/RenderTextureRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/rendertexture/RenderTextureWebGL.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/rendertexture/RenderTextureWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite/Sprite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite/SpriteCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite/SpriteCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite/SpriteFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite/SpriteRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite/SpriteWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite3d/Sprite3D.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite3d/Sprite3DCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/sprite3d/Sprite3DFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/GetTextSize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/MeasureText.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/TextStyle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/static/Text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/static/TextCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/static/TextCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/static/TextFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/static/TextRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/text/static/TextWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/tilesprite/TileSprite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/tilesprite/TileSpriteCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/tilesprite/TileSpriteCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/tilesprite/TileSpriteFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/tilesprite/TileSpriteRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/tilesprite/TileSpriteWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/zone/Zone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/zone/ZoneCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/gameobjects/zone/ZoneFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/Area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/Circle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/Circumference.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/CircumferencePoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/Clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/Contains.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/ContainsPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/ContainsRect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/CopyFrom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/Equals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/GetBounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/GetPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/GetPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/Offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/OffsetPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/Random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/circle/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/Area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/Circumference.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/CircumferencePoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/Clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/Contains.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/ContainsPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/ContainsRect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/CopyFrom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/Ellipse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/Equals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/GetBounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/GetPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/GetPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/Offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/OffsetPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/Random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/ellipse/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/CircleToCircle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/CircleToRectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/GetRectangleIntersection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/LineToCircle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/LineToLine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/LineToRectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/PointToLine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/PointToLineSegment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/RectangleToRectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/RectangleToTriangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/RectangleToValues.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/TriangleToCircle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/TriangleToLine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/TriangleToTriangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/intersects/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Angle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/BresenhamPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/CenterOn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/CopyFrom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Equals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/GetMidPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/GetNormal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/GetPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/GetPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Height.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Length.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/NormalAngle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/NormalX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/NormalY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/PerpSlope.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/ReflectAngle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Rotate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/RotateAroundPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/RotateAroundXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/SetToAngle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Slope.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/Width.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/line/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Ceil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/CopyFrom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Equals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Floor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/GetCentroid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/GetMagnitude.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/GetMagnitudeSq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/GetRectangleFromPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Interpolate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Invert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Negative.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Point.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/Project.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/ProjectUnit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/SetMagnitude.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/point/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/Clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/Contains.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/ContainsPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/Earcut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/GetAABB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/GetNumberArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/Polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/Reverse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/polygon/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Ceil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/CeilAll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/CenterOn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Contains.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/ContainsPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/ContainsRect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/CopyFrom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Decompose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Equals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/FitInside.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/FitOutside.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Floor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/FloorAll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/FromPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/GetAspectRatio.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/GetCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/GetPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/GetPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/GetSize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Inflate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/MarchingAnts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/MergePoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/MergeRect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/MergeXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/OffsetPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Overlaps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Perimeter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/PerimeterPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Rectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Scale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/Union.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/rectangle/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/BuildEquilateral.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/BuildFromPolygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/BuildRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/CenterOn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Centroid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/CircumCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/CircumCircle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Contains.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/ContainsArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/ContainsPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/CopyFrom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Decompose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Equals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/GetPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/GetPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/InCenter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Perimeter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Rotate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/RotateAroundPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/RotateAroundXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/Triangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/geom/triangle/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/InputManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/InputPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/InteractiveObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/Pointer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/Axis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/Button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/Gamepad.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/GamepadManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/configs/SNES_USB_Controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/configs/Sony_PlayStation_DualShock_4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/configs/XBox360_Controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/configs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/gamepad/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/KeyboardManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/combo/AdvanceKeyCombo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/combo/KeyCombo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/combo/ProcessKeyCombo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/combo/ResetKeyCombo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/DownDuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/JustDown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/JustUp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/Key.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/KeyCodes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/KeyMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/ProcessKeyDown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/ProcessKeyUp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/ResetKey.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/keyboard/keys/UpDuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/mouse/MouseManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/mouse/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/touch/TouchManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/input/touch/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/File.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/FileTypesManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/GetURL.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/LoaderPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/MergeXHRSettings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/XHRLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/XHRSettings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/AnimationJSONFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/AtlasJSONFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/AudioFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/AudioSprite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/BinaryFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/BitmapFontFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/GLSLFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/HTML5AudioFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/HTMLFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/ImageFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/JSONFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/MultiAtlas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/PluginFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/SVGFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/ScriptFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/SpriteSheetFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/TextFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/TilemapCSVFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/TilemapJSONFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/UnityAtlasFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/XMLFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/filetypes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/loader/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Average.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Bernstein.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Between.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/CatmullRom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/CeilTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Clamp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/DegToRad.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Difference.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Factorial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/FloatBetween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/FloorTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/FromPercent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/GetSpeed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/IsEven.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/IsEvenStrict.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Linear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Matrix3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Matrix4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/MaxAdd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/MinSub.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Percent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Quaternion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RadToDeg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RandomXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RandomXYZ.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RandomXYZW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Rotate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RotateAround.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RotateAroundDistance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RotateVec3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RoundAwayFromZero.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/RoundTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/SinCosTableGenerator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/SmoothStep.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/SmootherStep.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/TransformXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Vector2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Vector3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Vector4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Within.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/Wrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/Between.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/BetweenPoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/BetweenPointsY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/BetweenY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/Normalize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/Reverse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/RotateTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/ShortestBetween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/Wrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/WrapDegrees.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/angle/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/distance/DistanceBetween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/distance/DistancePower.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/distance/DistanceSquared.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/distance/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/EaseMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/back/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/back/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/back/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/back/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/bounce/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/bounce/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/bounce/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/bounce/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/circular/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/circular/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/circular/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/circular/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/cubic/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/cubic/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/cubic/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/cubic/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/elastic/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/elastic/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/elastic/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/elastic/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/expo/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/expo/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/expo/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/expo/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/linear/Linear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/linear/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quadratic/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quadratic/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quadratic/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quadratic/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quartic/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quartic/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quartic/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quartic/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quintic/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quintic/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quintic/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/quintic/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/sine/In.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/sine/InOut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/sine/Out.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/sine/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/stepped/Stepped.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/easing/stepped/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/fuzzy/Ceil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/fuzzy/Equal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/fuzzy/Floor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/fuzzy/GreaterThan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/fuzzy/LessThan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/fuzzy/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/interpolation/BezierInterpolation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/interpolation/CatmullRomInterpolation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/interpolation/CubicBezierInterpolation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/interpolation/LinearInterpolation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/interpolation/QuadraticBezierInterpolation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/interpolation/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/pow2/GetPowerOfTwo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/pow2/IsSizePowerOfTwo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/pow2/IsValuePowerOfTwo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/pow2/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/random-data-generator/RandomDataGenerator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/snap/SnapCeil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/snap/SnapFloor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/snap/SnapTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/math/snap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/phaser-arcade-physics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/phaser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/ArcadeImage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/ArcadePhysics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/ArcadeSprite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/Body.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/Collider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/Factory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/GetOverlapX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/GetOverlapY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/PhysicsGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/SeparateX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/SeparateY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/StaticBody.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/StaticPhysicsGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/World.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Acceleration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Bounce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Drag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Enable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Friction.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Gravity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Immovable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Mass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Size.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/Velocity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/components/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/tilemap/ProcessTileCallbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/tilemap/ProcessTileSeparationX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/tilemap/ProcessTileSeparationY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/tilemap/SeparateTile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/tilemap/TileCheckX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/tilemap/TileCheckY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/arcade/tilemap/TileIntersectsBody.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/Body.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/COLLIDES.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/CollisionMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/DefaultDefs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/Factory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/GetVelocity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/ImpactBody.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/ImpactImage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/ImpactPhysics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/ImpactSprite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/SeperateX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/SeperateY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/Solver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/TYPE.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/UpdateMotion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/World.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/Acceleration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/BodyScale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/BodyType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/Bounce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/CheckAgainst.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/Collides.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/Debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/Friction.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/Gravity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/Offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/SetGameObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/Velocity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/components/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/impact/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/CustomMain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/Factory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/MatterGameObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/MatterImage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/MatterPhysics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/MatterSprite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/MatterTileBody.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/PointerConstraint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/World.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Bounce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Collision.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Force.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Friction.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Gravity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Mass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Sensor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/SetBody.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Sleep.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Static.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/Velocity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/components/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/body/Body.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/body/Composite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/body/World.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/collision/Detector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/collision/Grid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/collision/Pair.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/collision/Pairs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/collision/Query.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/collision/Resolver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/collision/SAT.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/constraint/Constraint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/constraint/MouseConstraint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/core/Common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/core/Engine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/core/Events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/core/Matter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/core/Metrics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/core/Plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/core/Runner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/core/Sleeping.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/factory/Bodies.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/factory/Composites.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/geometry/Axes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/geometry/Bounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/geometry/Svg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/geometry/Vector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/geometry/Vertices.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/license.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/plugins/MatterAttractors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/plugins/MatterWrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/lib/render/Render.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/physics/matter-js/poly-decomp/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/Array.forEach.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/Array.isArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/AudioContextMonkeyPatch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/Function.bind.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/Math.trunc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/Uint32Array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/console.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/performance.now.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/polyfills/requestAnimationFrame.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/BlendModes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/ScaleModes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/canvas/CanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/canvas/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/canvas/utils/BlitImage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/canvas/utils/DrawImage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/canvas/utils/GetBlendModes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/snapshot/CanvasSnapshot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/snapshot/WebGLSnapshot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/snapshot/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/Utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/WebGLPipeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/WebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/pipelines/BitmapMaskPipeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/pipelines/FlatTintPipeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/pipelines/ForwardDiffuseLightPipeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/pipelines/TextureTintPipeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/pipelines/components/ModelViewProjection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/pipelines/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/BitmapMask.frag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/BitmapMask.vert" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/DeferredDiffuse.frag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/DeferredDiffuse.vert" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/FlatTint.frag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/FlatTint.vert" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/ForwardDiffuse.frag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/GBuffer.frag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/TextureTint.frag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/renderer/webgl/shaders/TextureTint.vert" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/GetPhysicsPlugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/GetScenePlugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/InjectionMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/Scene.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/SceneManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/ScenePlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/Settings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/Systems.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/scene/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/BaseSound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/BaseSoundManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/SoundManagerCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/html5/HTML5AudioSound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/html5/HTML5AudioSoundManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/noaudio/NoAudioSound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/noaudio/NoAudioSoundManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/webaudio/WebAudioSound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/sound/webaudio/WebAudioSoundManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/structs/List.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/structs/Map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/structs/ProcessQueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/structs/RTree.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/structs/Set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/structs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/Frame.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/Texture.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/TextureManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/TextureSource.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/Canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/Image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/JSONArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/JSONHash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/Pyxel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/SpriteSheet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/SpriteSheetFromAtlas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/StarlingXML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/UnityYAML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/textures/parsers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/Formats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/ImageCollection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/ParseToTilemap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/Tile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/Tilemap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/TilemapCreator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/TilemapFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/Tileset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/CalculateFacesAt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/CalculateFacesWithin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/Copy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/CreateFromTiles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/CullTiles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/Fill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/FilterTiles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/FindByIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/FindTile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/ForEachTile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/GetTileAt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/GetTileAtWorldXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/GetTilesWithin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/GetTilesWithinShape.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/GetTilesWithinWorldXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/HasTileAt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/HasTileAtWorldXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/IsInLayerBounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/PutTileAt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/PutTileAtWorldXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/PutTilesAt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/Randomize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/RemoveTileAt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/RemoveTileAtWorldXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/RenderDebug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/ReplaceByIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetCollision.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetCollisionBetween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetCollisionByExclusion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetCollisionByProperty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetCollisionFromCollisionGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetLayerCollisionIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetTileCollision.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetTileIndexCallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SetTileLocationCallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/Shuffle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/SwapByIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/TileToWorldX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/TileToWorldXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/TileToWorldY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/WeightedRandomize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/WorldToTileX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/WorldToTileXY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/WorldToTileY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/components/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/dynamiclayer/DynamicTilemapLayer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/dynamiclayer/DynamicTilemapLayerCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/dynamiclayer/DynamicTilemapLayerRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/dynamiclayer/DynamicTilemapLayerWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/mapdata/LayerData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/mapdata/MapData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/mapdata/ObjectLayer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/Parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/Parse2DArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/ParseCSV.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/impact/ParseTileLayers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/impact/ParseTilesets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/impact/ParseWeltmeister.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/AssignTileProperties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/Base64Decode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/BuildTilesetIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/ParseGID.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/ParseImageLayers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/ParseJSONTiled.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/ParseObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/ParseObjectLayers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/ParseTileLayers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/ParseTilesets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/parsers/tiled/Pick.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/staticlayer/StaticTilemapLayer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/staticlayer/StaticTilemapLayerCanvasRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/staticlayer/StaticTilemapLayerRender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tilemaps/staticlayer/StaticTilemapLayerWebGLRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/time/Clock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/time/TimerEvent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/time/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/Timeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/TweenManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/GetBoolean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/GetEaseFunction.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/GetNewValue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/GetProps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/GetTargets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/GetTweens.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/GetValueOp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/NumberTweenBuilder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/TimelineBuilder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/TweenBuilder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/builders/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/tween/Defaults.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/tween/ReservedProps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/tween/Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/tween/TweenData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/tweens/tween/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/Class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/NOOP.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/FindClosestInSorted.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/GetRandomElement.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/NumberArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/NumberArrayStep.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/QuickSelect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/Range.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/RemoveRandomElement.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/RotateLeft.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/RotateRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/Shuffle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/SpliceOne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/StableSort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/CheckMatrix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/MatrixToString.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/ReverseColumns.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/ReverseRows.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/Rotate180.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/RotateLeft.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/RotateMatrix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/RotateRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/TransposeMatrix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/array/matrix/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/Clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/Extend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/GetAdvancedValue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/GetFastValue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/GetMinMaxValue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/GetValue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/HasAll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/HasAny.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/HasValue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/IsPlainObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/Merge.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/MergeRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/object/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/string/Format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/string/Pad.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/string/Reverse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/string/UppercaseFirst.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/src/utils/string/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/webpack.dist.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phaser-3.3.0/yarn.lock" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.js" afterPath="$PROJECT_DIR$/public/main.js" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,62 +1082,7 @@
     <favorites_list name="colorRun" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/socket.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Durivet_Run.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/blue/Durivet_Run.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Durivet_Jump.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/blue/Durivet_Jump.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -200,10 +1198,92 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blue" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colorRun" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,119 +1294,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/main.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/socket.js</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -359,6 +1326,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -403,22 +1376,32 @@
       <updated>1527072225960</updated>
       <workItem from="1527072229278" duration="322000" />
       <workItem from="1527072561545" duration="2192000" />
-      <workItem from="1527172777043" duration="1637000" />
+      <workItem from="1527172777043" duration="1948000" />
+      <workItem from="1527238449471" duration="27000" />
+      <workItem from="1528796664421" duration="82000" />
     </task>
+    <task id="LOCAL-00001" summary="refactored transform and reverse sprites">
+      <created>1527174944519</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527174944519</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4151000" />
+    <option name="totallyTimeSpent" value="4571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2094522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21589689" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -449,6 +1432,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactored transform and reverse sprites" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored transform and reverse sprites" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -458,7 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -466,7 +1452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -474,7 +1459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -482,7 +1466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -490,35 +1473,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/colorRun.html" />
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/blue/Durivet_Jump.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -529,26 +1487,62 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/blue/Durivet_Transform.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/public/assets/blue/Durivet_Transform.png" />
+    <entry file="file://$PROJECT_DIR$/public/assets/blue/Durivet_Reverse.png" />
+    <entry file="file://$PROJECT_DIR$/public/assets/green/Standaert_Reverse.png" />
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/blue/Durivet_Reverse.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/views/error.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/green/Standaert_Reverse.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="-3009">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
