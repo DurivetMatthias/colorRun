@@ -16,5 +16,5 @@ steps:
       - run
       - --filename=config/deployment.yaml
       - --image=eu.gcr.io/ace-apps-dev/shiny-app:$TAG_NAME
-      - --location=$LOCATION
-      - --cluster=$CLUSTER
+      - --location=$_LOCATION
+      - --cluster=$_CLUSTER
