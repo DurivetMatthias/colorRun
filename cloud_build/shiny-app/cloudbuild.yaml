@@ -4,17 +4,17 @@ steps:
       [
         "build",
         "-t",
-        "eu.gcr.io/ace-apps-dev/shiny-app:$TAG",
+        "eu.gcr.io/ace-apps-dev/shiny-app:$TAG_NAME",
         "-f",
         "cloud_build/shiny-app/Dockerfile",
         ".",
       ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "eu.gcr.io/ace-apps-dev/shiny-app:$TAG"]
+    args: ["push", "eu.gcr.io/ace-apps-dev/shiny-app:$TAG_NAME"]
   - name: "gcr.io/cloud-builders/gke-deploy:stable"
     args:
       - run
       - --filename=config/deployment.yaml
-      - --image=eu.gcr.io/ace-apps-dev/shiny-app:$TAG
+      - --image=eu.gcr.io/ace-apps-dev/shiny-app:$TAG_NAME
       - --location=$LOCATION
       - --cluster=$CLUSTER
