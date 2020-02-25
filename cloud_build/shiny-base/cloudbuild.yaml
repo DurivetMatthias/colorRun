@@ -1,0 +1,14 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "eu.gcr.io/ace-apps-dev/shiny-base:$TAG",
+        "-f",
+        "cloud_build/shiny-base/Dockerfile",
+        ".",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "eu.gcr.io/ace-apps-dev/shiny-base:$TAG"]
+timeout: 1800s
