@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: shiny-app
+  name: shiny-app
+spec:
+  selector:
+    matchLabels:
+      run: shiny-app
+  template:
+    metadata:
+      labels:
+        run: shiny-app
+    spec:
+      containers:
+        - name: shiny-app
+          image: eu.gcr.io/ace-apps-dev/shiny-books-proposal-profile:latest
+          imagePullPolicy: Always
